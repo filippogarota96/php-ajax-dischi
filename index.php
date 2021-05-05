@@ -2,6 +2,7 @@
 include  __DIR__ . "/variables.php";
 include  __DIR__ . "/partials/functions.php";
 include  __DIR__ . "/database.php";
+include __DIR__ . "/partials/header.php"
 ?>
 
 <!DOCTYPE html>
@@ -16,20 +17,8 @@ include  __DIR__ . "/database.php";
 </head>
 
 <body>
-
   <body>
     <div id="app">
-      <header>
-        <div class="logo-wrapper">
-          <img class="logo" src="img/download.png" alt="logo">
-        </div>
-        <div class="select-wrapper">
-          <label for="select-genre">Seleziona un genere: </label>
-          <select class="select-genre" name="select-genre">
-            <option value="">All</option>
-          </select>
-        </div>
-      </header>
       <main>
         <div class="container">
           <?php foreach ($albums as $album) : ?>
