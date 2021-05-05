@@ -6,7 +6,7 @@ const app = new Vue({
     genreSelected: ''
   },
   mounted: function () {
-    axios.get("https://flynn.boolean.careers/exercises/api/array/music")
+    axios.get("http://localhost/php-ajax-dischi/api.php")
       .then((risposta) => {
         const albumsOrdered = risposta.data.response.sort(function (a, b) {
           return a.year - b.year;
