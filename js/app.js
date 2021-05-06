@@ -8,7 +8,7 @@ const app = new Vue({
   mounted: function () {
     axios.get("http://localhost/php-ajax-dischi/api.php")
       .then((risposta) => {
-        const albumsOrdered = risposta.data.response.sort(function (a, b) {
+        const albumsOrdered = risposta.data.sort(function (a, b) {
           return a.year - b.year;
         });
         this.albums = albumsOrdered;

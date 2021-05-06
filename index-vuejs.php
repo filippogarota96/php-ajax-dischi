@@ -32,8 +32,8 @@
         <div class="cd-container" v-for="item in albums" v-if="item.genre == genreSelected || genreSelected ==''">
           <img :src="item.poster" :alt="item.title">
           <h3>{{item.title}}</h3>
-          <span>{{item.author}}</span>
-          <span>{{item.year}}</span>
+          <span class="white">{{item.author}}</span>
+          <span class="white">{{item.year}}</span>
         </div>
       </div>
     </main>
